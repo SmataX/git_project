@@ -44,3 +44,5 @@ if __name__ == "__main__":
             student_handler.add_student(student_handler.generate_id(), first_name=first_name, surname=surname)
 
         print("\n\n")
+
+        # help
