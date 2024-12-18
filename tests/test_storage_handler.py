@@ -7,7 +7,6 @@ from src.storage_handler import read_from_file, write_row_to_file
 class TestStorageHandler(unittest.TestCase):
 
     def test_read_from_file(self):
-        open_mock = mock_open()
         with patch("builtins.open", mock_open(read_data="1,Adam,Nowak")):
             result = read_from_file("path")
             self.assertEqual(result, [["1", "Adam", "Nowak"]])
