@@ -1,5 +1,5 @@
-from student_handler import StudentHandler
-from storage_handler import read_from_file
+from src.student_handler import StudentHandler
+from src.storage_handler import read_from_file
 
 def display_menu():
     print("----- Students Manager -----")

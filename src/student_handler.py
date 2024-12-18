@@ -1,4 +1,4 @@
-from storage_handler import write_rows_to_file
+from src.storage_handler import write_rows_to_file
 
 class StudentHandler:
     def __init__(self, list_of_students = [], file_path: str = "data/students.csv"):

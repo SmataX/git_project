@@ -1,5 +1,5 @@
 import unittest
-from unittest.mock import patch, mock_open, call
+from unittest.mock import patch, mock_open
 
 from src.storage_handler import read_from_file, write_rows_to_file, write_row_to_file
 
