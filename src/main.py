@@ -10,9 +10,7 @@ def display_menu():
     print("[0] exit")
 
 
-
-
-if __name__ == "__main__":
+def main():
     student_handler = StudentHandler(list_of_students=read_from_file("data/students.csv"))
 
     while True:
@@ -43,4 +41,13 @@ if __name__ == "__main__":
             surname = input("Enter surname: ")
             student_handler.add_student(student_handler.generate_id(), first_name=first_name, surname=surname)
 
+        # remove student
+        elif user_input == 3:
+            print("\n----- REMOVE STUDENT -----")
+            for student in student_handler.list_of_students:
+                print(f"[{student[0]}] {student[1]} {student[2]}")
+
         print("\n\n")
+
+if __name__ == "__main__":
+    main()
